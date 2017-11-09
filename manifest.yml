@@ -1,4 +1,8 @@
+---
 applications:
-- name: node-hello-world
-  memory: 128M
-  buildpack: sdk-for-nodejs
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  host: simple-website-AP
+  name: simple-website
+  memory: 64M
+  stack: cflinuxfs2
+  
